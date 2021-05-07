@@ -1,0 +1,11 @@
+---
+application:
+  name: "minisrv"
+  project: "youbbs"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-minisrv"
+  routes:
+  - application_name: "minisrv"
+    paths:
+    - "/*"
