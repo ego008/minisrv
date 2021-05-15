@@ -6,11 +6,16 @@ import (
 	"log"
 	"net/http"
 	"time"
+	"os"
+	"runtime"
 )
 
 var db *sdb.DB
 
 func main() {
+	fmt.Println(os.Args[0])
+	fmt.Println(runtime.Caller(1))
+	
 	var err error
 	db, err = sdb.Open("lcdb", nil)
 	if err != nil {
