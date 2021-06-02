@@ -38,5 +38,5 @@ func HelloServer(w http.ResponseWriter, r *http.Request) {
 		ts = time.Now().String()
 		_ = db.Hset("kv", key, sdb.S2b(ts))
 	}
-	_, _ = fmt.Fprintf(w, "Hello, %s!", r.URL.Path[1:]+" "+sdb.B2s([]byte("test"))+", sdb key created at "+ts)
+	_, _ = fmt.Fprintf(w, "Hello 2, %s!", r.URL.Path[1:]+" "+sdb.B2s([]byte("test"))+", sdb key created at "+ts)
 }
