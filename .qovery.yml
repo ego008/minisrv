@@ -3,6 +3,11 @@ application:
   name: "minisrv"
   project: "youbbs"
   organization: "QoveryCommunity"
+  storage:
+  - name: "images"
+    size: "100"
+    type: "ssd"
+    mount_point: "/mnt/images"
 routers:
 - name: "main-minisrv"
   routes:
