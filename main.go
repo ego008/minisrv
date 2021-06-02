@@ -17,7 +17,7 @@ func main() {
 	fmt.Println(runtime.Caller(1))
 	
 	var err error
-	db, err = sdb.Open("/mnt/images/lcdb", nil)
+	db, err = sdb.Open("lcdb", nil)
 	if err != nil {
 		log.Panicln(err)
 	}
